@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anna P. – Shopify & WordPress Developer</title>
+  <meta name="description" content="Shopify and WordPress developer. Building and improving online stores that are clear, fast, and ready to sell.">
+  <link rel="icon" href="icons/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ MENU ============ -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <ul class="nav__links">
+        <li><a href="#works">Works</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+      <a class="btn btn--blue" href="#contacts">
+        Let’s Talk
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero container">
+      <h1 class="hero__name">Anna P.</h1>
+
+      <!-- Фото меняется на второе при наведении (на телефоне — по нажатию) -->
+      <div class="hero__photo">
+        <img class="hero__img hero__img--main" src="images/anna-photo.png" alt="Anna P.">
+        <img class="hero__img hero__img--alt" src="images/anna-photo-2.png" alt="" aria-hidden="true">
+      </div>
+
+      <div class="hero__intro">
+        <p class="hero__role">Shopify &amp; WordPress Developer</p>
+        <p class="hero__text">Building and improving online stores that are clear, fast, and ready to sell.</p>
+      </div>
+
+      <ul class="socials socials--column">
+        <li><a href="https://www.instagram.com/anushpanosyan/" target="_blank" rel="noopener"><img src="icons/icon-instagram.svg" alt="">instagram</a></li>
+        <li><a href="https://www.facebook.com/anush.panosyan.1" target="_blank" rel="noopener"><img src="icons/icon-facebook.svg" alt="">facebook</a></li>
+        <li><a href="https://www.linkedin.com/in/anna-panosyan27/" target="_blank" rel="noopener"><img src="icons/icon-linkedin.svg" alt="">linkedin</a></li>
+        <li><a href="https://t.me/tarantinoq27" target="_blank" rel="noopener"><img src="icons/icon-telegram.svg" alt="">telegram</a></li>
+      </ul>
+    </section>
+
+    <!-- ============ WORKS ============ -->
+    <section class="works" id="works">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-head__bg" aria-hidden="true">Portfolio</span>
+          <h2 class="section-head__title">My Works</h2>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter works">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="shopify" aria-pressed="false">Shopify</button>
+          <button type="button" data-filter="wordpress" aria-pressed="false">WordPress</button>
+        </div>
+
+        <!-- Чтобы карточка открывала сайт, замените <article ...> на <a href="ссылка" target="_blank" rel="noopener" ...>, а </article> на </a> -->
+        <div class="works__grid">
+
+          <article class="card" data-category="shopify">
+            <div class="card__img"><img src="images/work-natures-herbal.jpg" alt="Nature’s Herbal landing page" loading="lazy"></div>
+            <div class="card__body">
+              <h3 class="card__title">Nature’s Herbal – Calendula Salve Landing Page</h3>
+              <ul class="card__tags"><li>Shopify</li><li>Landing Page</li><li>Single Product</li></ul>
+            </div>
+          </article>
+
+          <article class="card" data-category="wordpress">
+            <div class="card__img"><img src="images/work-peace.jpg" alt="“Peace” art competition website" loading="lazy"></div>
+            <div class="card__body">
+              <h3 class="card__title">“Peace” – Multilingual Art Competition Website</h3>
+              <ul class="card__tags"><li>WordPress</li><li>Divi</li><li>Multilingual</li></ul>
+            </div>
+          </article>
+
+          <article class="card" data-category="shopify">
+            <div class="card__img"><img src="images/work-biorganic.jpg" alt="Biorganic online store" loading="lazy"></div>
+            <div class="card__body">
+              <h3 class="card__title">Biorganic – Natural Cosmetics Shopify Store</h3>
+              <ul class="card__tags"><li>Shopify</li><li>E-commerce</li><li>Store Setup</li></ul>
+            </div>
+          </article>
+
+          <article class="card" data-category="wordpress">
+            <div class="card__img"><img src="images/work-lilit-melikyan.jpg" alt="Lilit Melikyan website" loading="lazy"></div>
+            <div class="card__body">
+              <h3 class="card__title">Lilit Melikyan – Personal Brand Website for a Designer</h3>
+              <ul class="card__tags"><li>WordPress</li><li>Personal Brand</li><li>Portfolio Website</li></ul>
+            </div>
+          </article>
+
+          <article class="card" data-category="wordpress">
+            <div class="card__img"><img src="images/work-taraz-art.jpg" alt="Taraz &amp; Art online store" loading="lazy"></div>
+            <div class="card__body">
+              <h3 class="card__title">Taraz &amp; Art – Online Store for Armenian Traditional Design</h3>
+              <ul class="card__tags"><li>WordPress</li><li>WooCommerce</li><li>E-commerce</li></ul>
+            </div>
+          </article>
+
+          <article class="card" data-category="wordpress">
+            <div class="card__img"><img src="images/work-teryan.jpg" alt="Teryan Cultural Center website" loading="lazy"></div>
+            <div class="card__body">
+              <h3 class="card__title">Teryan Cultural Center – Website for a Cultural Organization</h3>
+              <ul class="card__tags"><li>WordPress</li><li>Divi</li><li>Corporate Website</li></ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICE ============ -->
+    <section class="service" id="service">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-head__bg" aria-hidden="true">Service</span>
+          <h2 class="section-head__title">Service</h2>
+        </div>
+
+        <div class="accordion">
+
+          <div class="acc-item is-open">
+            <button class="acc-item__head" type="button" aria-expanded="true" aria-controls="service-1">
+              <span class="acc-item__title">Shopify Store Setup</span>
+              <span class="acc-item__icon" aria-hidden="true">
+                <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 18 18 6M8 6h10v10"/></svg>
+                <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 5l14 14M19 5 5 19"/></svg>
+              </span>
+            </button>
+            <div class="acc-item__panel" id="service-1"><div>
+              <p>Building Shopify stores from scratch: theme setup, products, pages, and everything you need to launch.</p>
+            </div></div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-item__head" type="button" aria-expanded="false" aria-controls="service-2">
+              <span class="acc-item__title">Theme Fixes &amp; Customization</span>
+              <span class="acc-item__icon" aria-hidden="true">
+                <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 18 18 6M8 6h10v10"/></svg>
+                <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 5l14 14M19 5 5 19"/></svg>
+              </span>
+            </button>
+            <div class="acc-item__panel" id="service-2"><div>
+              <p>Fixing layout and mobile issues, customizing sections with HTML, CSS, JavaScript, and Liquid.</p>
+            </div></div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-item__head" type="button" aria-expanded="false" aria-controls="service-3">
+              <span class="acc-item__title">WordPress Websites</span>
+              <span class="acc-item__icon" aria-hidden="true">
+                <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 18 18 6M8 6h10v10"/></svg>
+                <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 5l14 14M19 5 5 19"/></svg>
+              </span>
+            </button>
+            <div class="acc-item__panel" id="service-3"><div>
+              <p>Building and redesigning WordPress sites on themes, tailored to your business and goals.</p>
+            </div></div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-item__head" type="button" aria-expanded="false" aria-controls="service-4">
+              <span class="acc-item__title">Store Management</span>
+              <span class="acc-item__icon" aria-hidden="true">
+                <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 18 18 6M8 6h10v10"/></svg>
+                <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 5l14 14M19 5 5 19"/></svg>
+              </span>
+            </button>
+            <div class="acc-item__panel" id="service-4"><div>
+              <p>Adding products, updating content, and keeping your store or website running smoothly.</p>
+            </div></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <span class="section-head__bg" aria-hidden="true">Experience</span>
+          <h2 class="section-head__title">Experience</h2>
+          <p class="experience__years">14+ years of experience</p>
+        </div>
+
+        <ul class="exp-list">
+          <li class="exp-row">
+            <div><h3 class="exp-row__company">Freelance</h3><p class="exp-row__role">Shopify Developer</p></div>
+            <p class="exp-row__date">2026 – Now</p>
+          </li>
+          <li class="exp-row">
+            <div><h3 class="exp-row__company">Taraz&amp;Art</h3><p class="exp-row__role">Web Designer (UI/UX)</p></div>
+            <p class="exp-row__date">2021 – Now</p>
+          </li>
+          <li class="exp-row">
+            <div><h3 class="exp-row__company"><a href="https://taplink.cc/yulia_raido" target="_blank" rel="noopener">Yulia Velesova</a></h3><p class="exp-row__role">Technical Specialist, Telegram Bots</p></div>
+            <p class="exp-row__date">2021 – 2024</p>
+          </li>
+          <li class="exp-row">
+            <div><h3 class="exp-row__company"><a href="https://ksglebova.ru/" target="_blank" rel="noopener">ksglebova.ru</a></h3><p class="exp-row__role">Web Designer (Remote)</p></div>
+            <p class="exp-row__date">2020 – 2021</p>
+          </li>
+          <li class="exp-row">
+            <div><h3 class="exp-row__company"><a href="https://natalimir.pro/" target="_blank" rel="noopener">natalimir.pro</a></h3><p class="exp-row__role">Web Designer (Remote)</p></div>
+            <p class="exp-row__date">2014 – 2016</p>
+          </li>
+          <li class="exp-row">
+            <div><h3 class="exp-row__company"><a href="https://lanske.ru/" target="_blank" rel="noopener">lanske.ru</a></h3><p class="exp-row__role">Web Designer (Remote)</p></div>
+            <p class="exp-row__date">2012 – 2014</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTS ============ -->
+    <section class="contact" id="contacts">
+      <div class="container">
+        <h2 class="contact__title">Have a project in mind?</h2>
+        <p class="contact__text">Whether you need a new store, a quick fix, or ongoing support, I’m here to help. Let’s build something that works for your business.</p>
+        <a class="btn btn--blue" href="https://t.me/tarantinoq27" target="_blank" rel="noopener">
+          Contact Me
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+
+        <ul class="socials socials--row">
+          <li><a href="https://www.instagram.com/anushpanosyan/" target="_blank" rel="noopener"><img src="icons/icon-instagram.svg" alt="">instagram</a></li>
+          <li><a href="https://www.facebook.com/anush.panosyan.1" target="_blank" rel="noopener"><img src="icons/icon-facebook.svg" alt="">facebook</a></li>
+          <li><a href="https://www.linkedin.com/in/anna-panosyan27/" target="_blank" rel="noopener"><img src="icons/icon-linkedin.svg" alt="">linkedin</a></li>
+          <li><a href="https://t.me/tarantinoq27" target="_blank" rel="noopener"><img src="icons/icon-telegram.svg" alt="">telegram</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
