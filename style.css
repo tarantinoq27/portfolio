@@ -333,6 +333,32 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 .contact__text { max-width: 62ch; margin: 0 auto 28px; color: var(--muted); letter-spacing: 0.03em; }
 
+/* ============ КНОПКА «НАВЕРХ» ============ */
+.to-top {
+  position: fixed;
+  right: clamp(16px, 2.5vw, 36px);
+  bottom: clamp(16px, 2.5vw, 36px);
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(16px);
+  transition: opacity 0.35s ease, transform 0.35s ease, visibility 0.35s, background-color 0.2s;
+}
+.to-top svg { width: 22px; height: 22px; }
+.to-top.is-visible { opacity: 1; visibility: visible; transform: none; }
+.to-top:hover { background: var(--blue-hover); }
+@media (prefers-reduced-motion: reduce) {
+  .to-top { transition: none; }
+}
+
 /* ============ ПЛАНШЕТ ============ */
 @media (max-width: 960px) {
   .works__grid { grid-template-columns: repeat(2, 1fr); }

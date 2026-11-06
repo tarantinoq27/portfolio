@@ -36,3 +36,17 @@ const photo = document.querySelector('.hero__photo');
 if (photo && window.matchMedia('(hover: none)').matches) {
   photo.addEventListener('click', () => photo.classList.toggle('is-swapped'));
 }
+
+// Кнопка «наверх»: видна после прокрутки примерно на экран
+const toTop = document.querySelector('.to-top');
+
+if (toTop) {
+  const updateToTop = () => toTop.classList.toggle('is-visible', window.scrollY > window.innerHeight * 0.8);
+  window.addEventListener('scroll', updateToTop, { passive: true });
+  updateToTop();
+
+  toTop.addEventListener('click', () => {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+  });
+}
