@@ -1,12 +1,3 @@
-/* ============ ШРИФТ ALBERTO ============
-   Положите файл шрифта в папку fonts/ и назовите alberto.woff2 (или alberto.ttf) */
-@font-face {
-  font-family: "Alberto";
-  src: url("fonts/alberto.woff2") format("woff2"),
-       url("fonts/alberto.ttf") format("truetype");
-  font-display: swap;
-}
-
 /* ============ ЦВЕТА И ШРИФТЫ ============ */
 :root {
   --blue: #2A8CC9;
@@ -20,7 +11,7 @@
   --line: #D4D4D4;
 
   --font: "Poppins", system-ui, sans-serif;
-  --display: "Alberto", Georgia, serif;
+  --display: "Aboreto", Georgia, serif;
   --container: 1280px;
 }
 
