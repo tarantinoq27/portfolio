@@ -149,7 +149,15 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   transition: border-color 0.2s, color 0.2s;
 }
 .socials a:hover { border-color: var(--blue); color: var(--blue); }
-.socials img { width: 15px; height: 15px; }
+/* иконка-трафарет: форма из SVG, цвет — от текста ссылки */
+.socials__icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  background-color: currentColor;
+  -webkit-mask: var(--icon) center / contain no-repeat;
+  mask: var(--icon) center / contain no-repeat;
+}
 
 .socials--column {
   grid-column: 3;
