@@ -319,6 +319,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .exp-row__company a { transition: color 0.2s; }
 .exp-row__company a:hover { color: var(--blue); }
 .exp-row__role, .exp-row__date { margin-top: 4px; font-size: 15px; letter-spacing: 0.06em; color: #A9A9A8; }
+.exp-row__desc { margin-top: 8px; max-width: 60ch; font-size: 15px; line-height: 1.5; color: var(--muted); }
 .exp-row__date { white-space: nowrap; min-width: 10em; }
 
 /* ============ КОНТАКТЫ ============ */
